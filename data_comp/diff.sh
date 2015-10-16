@@ -32,7 +32,8 @@ tmp1_file=tmp1.data
 tmp2_file=tmp2.data
 
 # fm8 tcp
-cp fm8_tcp_md_v1_01.data $tmp1_file
+fm8_file=mobile_data_1016/fm8_tcp_md_v1_01.data
+cp $fm8_file $tmp1_file
 
 for data in $filter_data
 do
@@ -43,7 +44,8 @@ done
 cp $tmp2_file tcp_md.data
 
 # xele_net
-cp xele_net_md.data $tmp1_file
+xele_file=xele_data_1016/xele_net_md.data
+cp $xele_file $tmp1_file
 
 for data in $filter_data
 do
